@@ -4,3 +4,4 @@ venv/
 Data
 Output/
 .env
+.DS_Store
