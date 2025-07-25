@@ -9,6 +9,8 @@ from tqdm.asyncio import tqdm_asyncio
 
 load_dotenv()
 
+# Cargamos tienda de ML
+
 TIENDA = {
     "access_token": os.getenv("CO_ACCESS_TOKEN"),
     "refresh_token": os.getenv("CO_REFRESH_TOKEN"),
