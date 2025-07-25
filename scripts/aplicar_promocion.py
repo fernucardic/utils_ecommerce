@@ -12,7 +12,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("log_promociones_TS.log"),
+        logging.FileHandler("log_promociones_CA.log"),
         logging.StreamHandler()
     ]
 )
@@ -20,9 +20,9 @@ logging.basicConfig(
 # Cargar variables de entorno
 load_dotenv()
 
-PROMOTION_ID = os.getenv("TS_PROMOTION_ID")
-ACCESS_TOKEN = os.getenv("TS_ACCESS_TOKEN")
-EXCEL_PATH = "../Data/Promociones/Tachar_TS.xlsx"
+PROMOTION_ID = os.getenv("CA_PROMOTION_ID")
+ACCESS_TOKEN = os.getenv("CA_ACCESS_TOKEN")
+EXCEL_PATH = "../Data/Promociones/Tachar_CA.xlsx"
 
 HEADERS = {
     "Authorization": f"Bearer {ACCESS_TOKEN}",
@@ -60,6 +60,7 @@ def aplicar_promocion(item_id, deal_price):
 def main():
     try:
         df = pd.read_excel(EXCEL_PATH)
+        print(df.columns)
         items = [(str(row["PublicacionID"]).strip(), float(row["PrecioOferta"])) for _, row in df.iterrows()]
 
         with ThreadPoolExecutor(max_workers=RATE_LIMIT) as executor:
