@@ -9,7 +9,7 @@ import backoff
 load_dotenv()
 
 PROMO_TYPE = "DEAL"
-OUTPUT_DIR = os.path.join("Output", "Promociones")
+OUTPUT_DIR = os.path.join("Output", "Started")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 TIENDAS = {
@@ -62,7 +62,7 @@ def procesar_tienda(item):
 
     params = {
         "promotion_type": PROMO_TYPE,
-        "status": "candidate",
+        "status": "started",
         "limit": 100,
         "app_version": "v2"
     }
