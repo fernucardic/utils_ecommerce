@@ -62,7 +62,7 @@ def procesar_tienda(item):
 
     params = {
         "promotion_type": PROMO_TYPE,
-        "status": "candidate",
+        # "status": "candidate",
         "limit": 100,
         "app_version": "v2"
     }

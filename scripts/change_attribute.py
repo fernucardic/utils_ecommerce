@@ -17,13 +17,13 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-async def update_attribute(session, item_id):
+async def update_attribute(session, item_id, seller_sku):
     url = f"https://api.mercadolibre.com/items/{item_id}"
     payload = {
         "attributes": [
             {
-                "id": "IS_FLAMMABLE",
-                "value_id": IS_FLAMMABLE_VALUE_ID
+                "id": "SELLER_SKU",
+                "value_id": seller_sku
             }
         ]
     }
