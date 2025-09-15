@@ -3,7 +3,7 @@ import csv
 import os
 
 # 🚀 URL de conexión (cámbiala por la tuya)
-MONGO_URL = "mongodb://mongo:OtqZXbDnLBYZbmYPBQrlSUQlUXiosTgK@mainline.proxy.rlwy.net:35712"
+MONGO_URL = "MONGO_URL"
 
 # Nombre de la base y colección
 DB_NAME = "test"
