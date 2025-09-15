@@ -8,10 +8,6 @@ ITEM_IDS = [
     # ...
 ]
 
-# Valor que deseas asignar (puede ser "Sí" o "No" según API)
-IS_FLAMMABLE_VALUE_ID = "242084"  # No
-# IS_FLAMMABLE_VALUE_ID = "242085"  # Sí
-
 HEADERS = {
     "Authorization": f"Bearer {ACCESS_TOKEN}",
     "Content-Type": "application/json"
