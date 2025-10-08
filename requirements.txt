@@ -26,6 +26,7 @@ dash==3.0.1
 debugpy==1.8.13
 decorator==5.2.1
 defusedxml==0.7.1
+dnspython==2.8.0
 et_xmlfile==2.0.0
 executing==2.2.0
 fastjsonschema==2.21.1
@@ -94,6 +95,7 @@ ptyprocess==0.7.0
 pure_eval==0.2.3
 pycparser==2.22
 Pygments==2.19.1
+pymongo==4.15.2
 pyobjc==11.1
 pyobjc-core==11.1
 pyobjc-framework-Accessibility==11.1
