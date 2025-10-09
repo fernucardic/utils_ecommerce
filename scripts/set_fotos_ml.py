@@ -18,7 +18,7 @@ import json
 # ==================== CONFIGURACIÓN ====================
 
 # Configurar tienda (cambiar según necesidad: CA, CO, DS, TE, TS)
-TIENDA = "TS"  # CAMBIAR SEGÚN LA TIENDA QUE SE PROCESE
+TIENDA = "CA"  # CAMBIAR SEGÚN LA TIENDA QUE SE PROCESE
 
 LOG_FILE = f"fotos_{TIENDA}.log"
 PROCESSED_ITEMS_FILE = f"items_fotos_procesados_{TIENDA}.txt"
